@@ -1,0 +1,20 @@
+/*--navbar--*/
+#menu{
+    background-color: grey;
+}
+li{
+    padding-left: 100px;
+}
+.g1
+{
+    width: 200px;
+    height: 165px;
+  
+}
+/*--footer--*/
+#bp{
+    background-color: grey;
+    text-decoration-color: antiquewhite;
+}
+
+.tf{color:whitesmoke;}
