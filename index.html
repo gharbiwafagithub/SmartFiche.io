@@ -12,6 +12,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ad112273b8.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
   </head>
 <body>
 
@@ -71,7 +73,7 @@
 
   
 <!--Text header-->
-<h2 class="h2-responsive text-center">A propos</h2>
+<h2 class="h2-responsive text-center text-primary">A propos</h2>
 <div class="container">
   <div class="row">
     <div class="col-md-4"> 
@@ -81,7 +83,7 @@
 </div>
 </div>
 <!--Fin text header-->
-<h2 class="h2-responsive text-center" id="nouveautés">Nouveautés</h2>
+<h2 class="h2-responsive text-center text-primary" id="nouveautés">Nouveautés</h2>
 
 
 <div class="container">
@@ -92,9 +94,9 @@
   </div>
 <!--Cards-->
   <div class="row">
-  <div class="col-md-4 d-flex justify-content-center py-4"><div class="card" style="width: 23rem;">
-   
-    <h4 class="text-center">Reno 4 Pro</h4>
+  
+    <div class="col-md-4 d-flex justify-content-center py-4"><div class="card" style="width: 23rem;">
+     <h4 class="text-center">Reno 4 Pro</h4>
      <img src="images/logo.jpg" class="card-img-top" alt="OPPO-Reno 4 Pro">
     <div class="card-body">
       <h5 class="card-title text-center">OPPO-Reno 4 Pro</h5>
@@ -106,9 +108,12 @@
       <li class="list-group-item">Prix</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link"><button>Voir plus</button></a>
+      <a href="#" class="card-link"><button class="voir">Voir plus</button></a>
     </div>
-  </div></div>
+    </div>
+    </div>
+  
+
 
 
   <div class="col-md-4 d-flex justify-content-center py-4"><div class="card" style="width: 23rem;">
@@ -124,9 +129,10 @@
       <li class="list-group-item">Prix</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link"><button>Voir plus</button></a>
+      <a href="#" class="card-link"><button class="voir">Voir plus</button></a>
     </div>
-  </div></div>
+    </div>
+  </div>
 
   
   <div class="col-md-4 d-flex justify-content-center py-4"><div class="card" style="width: 23rem;">
@@ -142,9 +148,15 @@
       <li class="list-group-item">Prix</li>
     </ul>
     <div class="card-body">
-      <a href="#" class="card-link"><button>Voir plus</button></a>
+      <a href="#" class="card-link"><button class="voir">Voir plus</button></a>
     </div>
-  </div></div>
+   </div>
+  </div>
+ </div> 
+
+
+
+
   <div class="row">
     <div class="col-md-4 d-flex justify-content-center py-4"><div class="card" style="width: 23rem;">
      
@@ -160,7 +172,7 @@
         <li class="list-group-item">Prix</li>
       </ul>
       <div class="card-body">
-        <a href="#" class="card-link"><button>Voir plus</button></a>
+        <a href="#" class="card-link"><button class="voir">Voir plus</button></a>
       </div>
     </div></div>
   
@@ -178,7 +190,7 @@
         <li class="list-group-item">Prix</li>
       </ul>
       <div class="card-body">
-        <a href="#" class="card-link"><button>Voir plus</button></a>
+        <a href="#" class="card-link"><button class="voir">Voir plus</button></a>
       </div>
     </div></div>
   
@@ -196,10 +208,13 @@
         <li class="list-group-item">Prix</li>
       </ul>
       <div class="card-body">
-        <a href="#" class="card-link"><button>Voir plus</button></a>
+        <a href="#" class="card-link"><button class="voir">Voir plus</button></a>
       </div>
-    </div></div>
-    <div class="row">
+    </div>
+  </div>
+ </div>
+    
+ <div class="row">
       <div class="col-md-4 d-flex justify-content-center py-4"><div class="card" style="width: 23rem;">
        
         <h4 class="text-center" >Y9a</h4>
@@ -214,7 +229,7 @@
           <li class="list-group-item">Prix</li>
         </ul>
         <div class="card-body">
-          <a href="#" class="card-link"><button>Voir plus</button></a>
+          <a href="#" class="card-link"><button class="voir">Voir plus</button></a>
         </div>
       </div></div>
     
@@ -232,12 +247,12 @@
           <li class="list-group-item">Prix</li>
         </ul>
         <div class="card-body">
-          <a href="#" class="card-link"><button>Voir plus</button></a>
+          <a href="#" class="card-link"><button class="voir">Voir plus</button></a>
         </div>
       </div></div>
     
       
-      <div class="col-md-4 d-flex justify-content-center py-6"><div class="card" style="width: 23rem;">
+      <div class="col-md-4 d-flex justify-content-center py-4"><div class="card" style="width: 23rem;">
         <h4 class="text-center">Tab S7</h4>
         <img src="images/logo.jpg" class="card-img-top" alt="OPPO-Reno 4 Pro">
         <div class="card-body">
@@ -250,15 +265,18 @@
           <li class="list-group-item">Prix</li>
         </ul>
         <div class="card-body">
-          <a href="#" class="card-link"><button>Voir plus</button></a>
+          <a href="#" class="card-link"><button class="voir">Voir plus</button></a>
         </div>
-      </div></div>
+      </div>
+    </div>
+ </div>
+</div>
      <!--fin cards-->
 
 
   <!----partenaires-->  
   <div class="container py-5">
-    <h2 class="h2-responsive text-center"> Nos partenaires</h2>
+    <h2 class="h2-responsive text-center text-primary"> Nos partenaires</h2>
     <br>
     <br>
      <div class="row">
@@ -276,19 +294,16 @@
       </div>
     </div>
   </div>  
-
-
-
-  <!----> 
-  <div class="container">              
+ <!--fin--> 
+               
 <!--formulaire de contact-->
-    
+<div class="container">
     <div class="row">       
        <div class="col-md-6"> 
  <div class="form-area">  
    <form role="form">
    <br style="clear:both">
-               <h3 style="margin-bottom: 25px; text-align: center;">Formulaire de contact</h3>
+               <h3 class="text-primary" style="margin-bottom: 25px; text-align: center;">Formulaire de contact</h3>
        <div class="form-group">
        <input type="text" class="form-control" id="name" name="name" placeholder="Nom & prénom" required>
      </div>
@@ -304,33 +319,28 @@
                            
    </div>
  
-     <div class="form-group">
+     <div class="form-group d-flex justify-content-end">
      <button type="button" id="submit" name="submit" class="soumettre">Envoyer</button>
      </div>
    </div>
    </form>
 </div>
-
-
-
-<!--Maps--> 
-<div class="col-md-6">
- <div id="googleMap" style="width:100%;height:400px;"></div>
-
- <script>
-   function myMap() {
-   var mapProp= {
-     center:new google.maps.LatLng(51.508742,-0.120850),
-     zoom:5,
-   };
-   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-   }
-   </script>
-   
-   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </div>
-</div>
-</div>    
+
+
+<!-- map -->
+  <div class="col-md-6">
+      <div class="mapouter">
+          <div class="gmap_canvas"><iframe  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=Les%20berges%20du%20lac&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>     
+                  <a href="https://123movies-to.org/%22%3E123movies/"></a>
+          </div>
+
+      </div>
+</div>  
+</div>  
+
 
 
   

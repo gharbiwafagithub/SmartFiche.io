@@ -18,3 +18,21 @@ li{
 }
 
 .tf{color:whitesmoke;}
+/*--cards--*/
+.voir{
+    width:100%
+}
+/*--Maps--*/
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 1000px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 1000px;
+}
